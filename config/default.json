@@ -1,0 +1,47 @@
+{
+  "confversion": 1,
+  "host": "localhost",
+  "port": 3030,
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "postgres",
+    "password": "",
+    "name": "example-app",
+    "postgresql": {
+      "application_name": "exampleapp",
+      "ssl": "",
+      "client_encoding": "",
+      "keepAlive": "",
+      "statement_timeout": "",
+      "idle_in_transaction_session_timeout": ""
+    }
+  },
+  "accountDir": "../account",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "x1XXXxXX4xXjYvcLijzwP0Zo2C8=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://127.0.0.1",
+      "issuer": "example-app-authservice",
+      "algorithm": "HS256",
+      "expiresIn": "200m"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
+}

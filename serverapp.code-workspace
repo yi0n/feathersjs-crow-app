@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"statusBar.background": "#1e0b52",
+			"titleBar.activeBackground": "#0099ff",
+			"titleBar.activeForeground": "#2b2b2b",
+			"activityBar.background": "#5311be",
+			"activityBar.activeBackground": "#181327",
+			"activityBar.foreground": "#ffffff",
+			"activityBar.inactiveForeground": "#d1b4ff",
+			"activityBarBadge.background": "#fc008a",
+      "activityBarBadge.foreground": "#ffffff"
+		},
+		"window.titleBarStyle": "custom",
+		"editor.fontSize": 12,
+    "rest-client.enableTelemetry": false,
+		"rest-client.defaultHeaders": {
+			"User-Agent": "projectname-sw"
+    },
+    "rest-client.environmentVariables": {
+      "$shared": { "version": "v1" },
+      "production": {"host": "app.example.de/api/v1/"},
+      "sandbox":{"host":"127.0.0.1"}
+    }
+	},
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "DEV Server",
+        "type": "shell",
+        "command": "npm run dev",
+        "windows": {
+          "command": "npm run dev"
+        },
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "new",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "runOptions": {
+          "runOn": "folderOpen"
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+}

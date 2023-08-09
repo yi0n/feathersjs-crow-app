@@ -1,0 +1,21 @@
+{
+  "host": "http://localhost",
+  "port": 3030,
+  "database": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "user": "postgres",
+    "password": "",
+    "name": "example-app",
+    "postgresql": {
+      "application_name": "exampleapp",
+      "ssl": "",
+      "client_encoding": "",
+      "keepAlive": "",
+      "statement_timeout": "",
+      "idle_in_transaction_session_timeout": ""
+    }
+  },
+  "publicDir": "../public",
+  "accountDir": "../account"
+}
